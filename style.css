@@ -1,0 +1,175 @@
+* {
+    font-family: "Avenir Next", "Avenir", "Arial", sans-serif;
+  }
+  html {
+    width: 100vw;
+    height: 100vh;
+  }
+  body {
+    width: 100vw;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: calc((100vh - 650px) / 2);
+  }
+  #page {
+    width: 372px;
+    padding: 20px 50px 150px 50px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: lightblue;
+    border-radius: 20px;
+    overflow: auto;
+  }
+  h3 {
+    font-size: 35px;
+    color: white;
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+    text-align: left;
+  }
+  svg {
+    vertical-align: bottom;
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+  h3 svg {
+    vertical-align: middle;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  h4 {
+    color: white;
+  }
+  footer li,
+  footer p,
+  small,
+  label {
+    color: white;
+  }
+  input[type="email"] {
+    display: inline-block;
+    height: 1.5em;
+    outline: none;
+    border: 1px solid white;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background-color: transparent;
+    margin-left: 5px;
+    padding: 0.1em 0.5em;
+    color: white;
+    width: 60%;
+  }
+  input[type="email"]::placeholder {
+    color: #aaa;
+  }
+  input[type="submit"] {
+    background-color: lightblue;
+    border: none;
+    height: 1.9em;
+    border-radius: 0 5px 5px 0px;
+    margin-left: -5px;
+  }
+  #page p,
+  #page li {
+    text-align: justify;
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  a {
+    color: lightblue;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(lightblue),
+      to(lightblue)
+    );
+    background: -o-linear-gradient(lightblue, lightblue);
+    background: linear-gradient(lightblue, lightblue);
+    background-position: 0 97%;
+    background-size: 100% 1px;
+    background-repeat: repeat-x;
+  }
+  p a {
+    display: inline-block;
+    height: 32px;
+  }
+  p a:hover {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(lightblue),
+      to(lightblue)
+    );
+    background: -o-linear-gradient(lightblue, lightblue);
+    background: linear-gradient(lightblue, lightblue);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+  }
+  footer {
+    background-color: #445;
+    padding: 0 50px 0 50px;
+    position: absolute;
+    top: calc(540px + ((100vh - 650px) / 2));
+    width: 372px;
+    height: 120px;
+    left: calc(50vw - 472px / 2);
+    border-radius: 0 0 20px 20px;
+    font-size: smaller;
+    -webkit-transition: all 0.5s, left 0s;
+    -o-transition: all 0.5s, left 0s;
+    transition: all 0.5s, left 0s;
+    overflow: hidden;
+  }
+  footer:hover {
+    top: calc((100vh - 650px) / 2);
+    height: 630px;
+    border-radius: 20px;
+    padding: 0 50px 20px 50px;
+  }
+  footer h3 {
+    margin: 0;
+    line-height: 120px;
+  }
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  nav {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0px 40px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  @media (max-width: 499px), @media (max-height: 599px) {
+    body * {
+      display: none;
+    }
+    body::after {
+      content: "Your screen is too small! Try full screen view or resize your window.";
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: bold;
+      display: block;
+      margin: 10px;
+    }
+  }
+  
